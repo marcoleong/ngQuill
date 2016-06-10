@@ -273,6 +273,7 @@
                             return;
                         }
                         console.log('update from ngModel');
+                        console.log(newText);
                         if (newText) {
                             updateInPlugin = true;
                             if (config.save === 'text') {
