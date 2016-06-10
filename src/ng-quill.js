@@ -272,7 +272,7 @@
                         if (updateFromPlugin) {
                             return;
                         }
-
+                        console.log('update from ngModel');
                         if (newText) {
                             updateInPlugin = true;
                             if (config.save === 'text') {
@@ -280,6 +280,7 @@
                             } else if (config.save === 'contents') {
                                 editor.setContents(newText);
                             } else {
+                                console.log('set HTML from ngModel');
                                 editor.setHTML(newText);
                             }
                         }
